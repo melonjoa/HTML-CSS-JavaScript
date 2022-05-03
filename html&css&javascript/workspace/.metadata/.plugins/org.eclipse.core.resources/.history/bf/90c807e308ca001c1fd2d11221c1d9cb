@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 주석처리이다. -->
+	<!-- <p> : 단락 -->
+	HTML을 학습하는 중입니다.
+	HTML는 생각보다 할만하다.
+	HTML 다음에는 CSS를 학습한다.
+
+
+</body>
+</html>

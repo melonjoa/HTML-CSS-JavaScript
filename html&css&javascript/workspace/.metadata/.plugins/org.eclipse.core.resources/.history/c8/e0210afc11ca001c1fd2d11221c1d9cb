@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 
+		<form enctype="multipart/form-data">
+			<input type="file">
+		</form>
+	
+		enctype="multipart/form-data	: 이 속성이 명시가 되어야 한다.
+	 -->
+</body>
+</html>

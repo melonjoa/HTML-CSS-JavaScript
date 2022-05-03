@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+	<input> : type="checkbox" or type="radio"
+	radio	: 여러 항목 중 한 가지만 선택 가능
+	checkbox: 여러 항목 중 복수로 선택 가능함
+ -->
+ 	선택 1 : <input type="radio" name="commonra">
+ 	선택 2 : <input type="radio" name="commonra">
+ 	선택 3 : <input type="radio" name="commonra">
+ 	선택 4 : <input type="radio" name="commonra">
+ 
+</body>
+</html>

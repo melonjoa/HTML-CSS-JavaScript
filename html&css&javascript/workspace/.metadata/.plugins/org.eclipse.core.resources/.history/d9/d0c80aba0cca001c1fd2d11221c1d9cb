@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<!-- 
+	<input name="" id="">
+	name	: 웹 프로그램과 연계되는 속성으로
+			한페이지 안에서 고유한 값을 명시
+	id		: 해당 페이지에서 그 요소를 식별하기 위한 값으로
+			고유한 값을 명시
+	-> name과 id값은 서로 동일하게 지정해도 무관하다.
+	type	: text, password, hidden
+			속성에 따라 화면에 표시되는 요소의 종류가 결정
+	value	: 해당 요소에 기본적으로 작성되어 있을 값을 기술한다.
+	maxlength	: 최대입력 가능한 글자 수를 제한한다.
+	placeholder	: 설명글, 사용자가 직접 값을 입력하는 형태의
+				input요소에 지정하여 값이 입력되기 전에 보여질 설명글을 표시한다.
+ -->
+
+</body>
+</html>

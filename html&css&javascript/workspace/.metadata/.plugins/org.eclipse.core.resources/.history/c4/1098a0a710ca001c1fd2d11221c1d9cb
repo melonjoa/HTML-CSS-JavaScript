@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+		<h1>색상</h1>
+		<select name="color">
+			<option></option>
+		</select>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<fieldset>
+		<legend>취미 선택하기</legend>
+		<input type="checkbox" name="hobby" value="축구"> 축구
+		<input type="checkbox" name="hobby" value="야구"> 야구
+		<input type="checkbox" name="hobby" value="농구"> 농구
+	</fieldset>
+
+</body>
+</html>

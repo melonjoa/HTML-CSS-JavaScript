@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<!-- 
+	semantic	: 의미론적 tag
+				문서의 정보를 보다 잘 표현하기 위해서는 의미에 맞는 태그를 잘 사용해야 한다.
+	사용이유		:1.SEO(Search engine optimization)
+					검색을 최적화하기 위해서 제목, 부제목,... 시멘틱 태그를 잘 활용하면
+					특정 키워드로 검색 했을때 내가 만든 웹사이트가 검색창에 노출될 수 있다.
+				 2. 유지보수
+					 단순히, div 태그로만 모든 구조를 짜는 것보다 더 한눈에 알아 볼 수
+					 있기 때문에, 유지보수에 더 편해진다.
+ -->
+<body>
+
+</body>
+</html>

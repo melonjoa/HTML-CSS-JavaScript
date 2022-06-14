@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	/* 공통속성 */
+	*{
+		margin: 0px;
+		padding: 0px;	
+	}
+	
+	html, body{ height: 100%; }
+	
+	/* container */
+	#container{
+		width: 800px;
+		margin: auto;
+	}
+	
+	/* header */
+	#header{
+		background-color: tomato;
+		width: auto;
+		height: 100px;
+	}
+	
+	/* content */
+	#content{
+		background-color: powderblue;
+		width: auto; 
+		/* 페이지의 최소 높이 지정 */
+		min-height: 300px;
+	}
+	
+	/* body, sidebar의 영역의 합이 부모 요소인 content의 넓이를 넘지 않도록 */
+	/* content > body */
+	#body{
+		width: 640px;
+		background-color: #FFFF00;
+		float: left;
+		min-height: 300px;
+	}
+	
+	/* content > sidebar */
+	#sidebar{
+		width: 160px;
+		background-color: #0000FF;
+		float: left;
+		min-height: 300px;
+	}
+	
+	/* footer */
+	#footer{
+		background-color: orange;
+		width: auto;
+		height: 80px;
+	}
+</style>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			상단영역
+		</div>
+		<div id="content">
+			<div id="body">
+				본문영역
+			</div>
+			<div id="sidebar">
+				사이드바
+			</div>
+		</div>
+		<div id="footer">
+			하단영역
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

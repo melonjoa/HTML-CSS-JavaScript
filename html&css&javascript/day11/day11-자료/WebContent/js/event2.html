@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 
+		프로퍼티 리스너
+		 - 이벤트 대상에 해당하는 객체의 프로퍼티로 이벤트를 등록하는 방식이다.
+		 - 인라인 방식에 비해서 HTML과 Javascript를 분리할 수 있다는 점에서
+		 선호되는 방식이다.
+	 -->
+	 
+	<input type="button" id="target" value="button" />
+	<script>
+	 	let t = document.getElementById('target');
+	 	t.onclick = function(){
+	 		alert('Hello world');
+	 	}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

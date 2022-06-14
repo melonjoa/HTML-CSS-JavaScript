@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+	인라인(inline)
+	 - 인라인 방식은 이벤트를 이벤트 대상의 태그 속성으로 지정하는 것
+ -->
+	<h1>10 + 50 = <span id="question"> ? </span> </h1>
+	<input type="button" value="결과보기" 
+		onclick="printResult();">
+		
+	<script>
+		// 문. 결과보기 버튼 클릭시,
+		// 10 + 50의 결과 값을 '?' 안에 넣어줄것
+	
+		function printResult() {
+			let result = sum(10, 50);
+			
+			// id로 접근
+			let mytag = document.getElementById("question");
+			mytag.innerHTML = result;
+		}
+		
+		function sum(x, y){
+			return x + y;
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

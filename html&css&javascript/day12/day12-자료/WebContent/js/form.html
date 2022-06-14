@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="form1">
+		<input type="text" name="user_name" id="user_name">
+	</form>
+	
+	<script>
+		// 접근방법
+		//let input = document.getElementById("user_name");
+		
+		// form 태그에 지정되는 name속성을 통하여 form 객체 획득 하는 방법
+		let myform = document.form1;
+		
+		// form 태그 객체는 자신이 포함안 하위 태그에 객체 갖는다. 
+		// 이 하위 객체들은 name속성을 통하여 접근할 수 있다.
+		let user_name = myform.user_name;
+		
+		// 중간과정 생략하고 직접 접근 방법
+		let user_name2 = document.form1.user_name;
+		
+		// value값 강제 설정
+		//document.form1.user_name.value = 'kjh';
+		
+		// value값 가지고 오기
+		console.log(document.form1.user_name.value);
+		
+		// 입력 여부 검사하기
+		if( !document.form1.user_name.value ){
+			alert("이름을 입력해 주세요");
+		}
+	</script>
+
+</body>
+</html>
+

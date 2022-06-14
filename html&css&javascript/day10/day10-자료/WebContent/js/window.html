@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 
+		window 객체
+		 - 전역객체 
+		 - Javascript의 모든 객체는 window객체의 하위 객체로서
+		  존재한다. 그러므로 내장객체에 대한 접근은 방법은
+		  	
+		  	window.내장객체이름.함수이름();
+		  
+		 - 하지만 모든 객체가 window안에 내장되어 있기 때문에, 
+		 window객체를 명시적으로 선언하는것은 생략하는 것이 가능하다.
+		 
+		 	내장객체이름.함수이름(); 
+		 
+		BOM(Browser Object Model)
+		 - 웹 브라우저의 창이나 프레임을 추상화해서 프로그래밍적으로
+		 제어할 수 있도록 제공하는 수단이다.
+		DOM(Document Object Model)
+		 - BOM소속인데 자주 사용되고 중요한 객체여서 따로 분리하였다.
+		JavaScript
+		 - 웹에서 쓰일때 사용되는 프로퍼티, 객체들
+	 -->
+	 
+	 
+	<h1>window 객체</h1>
+	<h3>open 메소드 확인</h3>
+	<div>
+		<a href="#" onclick="open1(); return false;">새창열기</a>
+		<br/>
+		<a href="#" onclick="open2(); return false;">팝업열기</a>
+		<br/>
+		<a href="#" onclick="open3(); return false;">팝업열기2</a>
+	</div>
+
+	<script>
+		/*
+			window.open() 함수
+			 - javascript 모든 기능이 window 객체의
+			 하위기능이기도하지만, 그 중 브라우저의 창을 
+			 제어하는것과 관련된 open() 함수가 window객체에
+			 직접적으로 포함되어 있다.
+			 
+			 - 새로운창 열기
+			  window.open("페이지 url");
+		*/
+		
+		function open1(){
+			window.open('http://www.naver.com');
+		}
+		
+		/*
+			- 팝업창 형태로 창을 열 경우
+			window.open("페이지url", "창이름", "옵션");
+		*/
+		function open2(){
+			// 클릭할 때 마다 창이 새로 열리는 팝업창 
+			window.open('http://www.naver.com', '', 
+				'width=300, height=500, scrollbars=no,toolbar=no, menubar=no, status=no, location=no');
+		}
+		
+		function open3(){
+			// 한번 생성된 팝업창을 지속적으로 재 사용하는 팝업창
+			window.open('http://www.naver.com', 'mywin', 
+				'width=300, height=500, scrollbars=no,toolbar=no, menubar=no, status=no, location=no');
+		}
+	
+	
+	</script>
+	
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css"> 
+	/*
+		text-shadow : 글자에 그림자를 추가하는 속성
+		셀렉터{
+			text-shadow : x y blur-radius color;
+				- x		: 본체와 그림자의 가로축 거리(px)
+				- y		: 본체와 그림자의 세로축 거리(px)
+				- blur-radius	: 그림자의 번짐 정도(px)
+				- color			: 그림자의 색상
+		}
+	*/
+
+	body{
+		font-size: 40px;
+		text-align: center;
+		/* font-weight : 폰트의 두께 */
+		font-weight: bold;
+	}
+	.text1 {
+		color: blue;
+		text-shadow: 3px 3px 5px #000000;
+	}
+	.text2{
+		color: red;
+		text-shadow: 3px 3px 5px #000;
+	}
+
+</style>
+</head>
+<body>
+	<span class="text1">HTML5</span> &amp;
+	<span class="text2">CSS</span>
+
+</body>
+</html>

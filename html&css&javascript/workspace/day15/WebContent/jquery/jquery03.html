@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<script>
+		// 배열선언
+		let arr = [
+			{ title : '다음', url : 'http://www.daum.net' },
+			{ title : '네이버', url : 'http://www.naver.com'}
+		];
+		
+		/*
+			결과:
+			0 : 다음, http://www.daum.net
+			1 : 네이버, http://www.naver.com
+		*/
+		$.each(arr, function(index, item){
+			let result = '';
+			result = index + ' : ' + item.title
+					+ "," + item.url;
+			document.write(result + '<br>');
+		});
+	</script>
+</body>
+</html>

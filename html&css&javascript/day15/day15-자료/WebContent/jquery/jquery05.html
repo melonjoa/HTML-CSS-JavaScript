@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+	.s1{color: tomato;}
+	.s2{color: powderblue;}
+	.s3{color: green;}
+	.s4{color: brown;}
+</style>
+</head>
+<body>
+	<p>HTML</p>
+	<p>JavaScript</p>
+	<p>Java</p>
+	<p>DBMS</p>
+	
+	<script>
+		// 문제1. each문을 사용해서
+		// HTML에는 style class s1, 
+		// JavaScript에는 style class s2,
+		// Java에는 style class s3,
+		// DBMS에는 style class s4
+		/*
+			<p class="s1">HTML</p>
+			<p class="s2">JavaScript</p>
+			<p class="s3">Java</p>
+			<p class="s4">DBMS</p>
+		*/
+		
+		$('p').each(function(index, item){
+			$(this).addClass('s' + (index + 1));
+		});
+		
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

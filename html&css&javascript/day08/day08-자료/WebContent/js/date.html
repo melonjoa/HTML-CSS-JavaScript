@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		/*
+			date 내장 객체
+			 - 웹 브라우저가 설치된 PC(혹은 스마트 장치)의 현재 시간을 
+			 얻어오거나 날짜/시간을 계산하는데 필요한 기능을 제공
+			
+			Date 객체 만드는 방법
+			 let mydate = new Date();
+		*/
+		
+		let mydate = new Date();
+		
+		// 년,월,일 리턴
+		let yy = mydate.getFullYear();
+		// 월은 0부터 1월, 11이 12월을 의미, 그래서 1증가
+		let mm = mydate.getMonth() + 1;
+		let dd = mydate.getDate();
+		
+		let result = yy + '-' +  mm + '-' + dd;
+		document.write("<h1>" + result + "</h1>")
+		
+		
+		
+		
+		
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

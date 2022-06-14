@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		var vscope = 'global';
+		
+		function fscope(){
+			// 지역변수
+			// 유효성의 범위를 벗어나면 사용불가
+			var lv = 'local val';
+			alert(lv);
+		}
+		
+		fscope();
+		alert(lv);
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

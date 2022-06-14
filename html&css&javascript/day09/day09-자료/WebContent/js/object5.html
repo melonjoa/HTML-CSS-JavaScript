@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		/*
+			this : 객체 안에 포함된 메서드에서 다른 메서드 호출, 
+			또는 변수를 호출할때 사용			
+		*/
+		
+		let people = {};
+	
+		people.name = 'kjh';
+		people.gender = '여자';
+		
+		// 객체안에 함수 포함시키기
+		people.sayName = function(){
+			// 객체 안에 포함된 함수에서, 멤버변수에 접근하기 위해서는
+			// this라는 예약어를 사용해야 한다
+			document.write('<h1>' + this.name + '</h1>');
+		};
+		
+		// 1. people객체에 gender가 출력되는 sayGender()함수 생성
+		people.sayGender = function(){
+			document.write('<h1>' + this.gender + '</h1>');
+		};
+		
+		// 2. people객체에 saySomething() 함수 생성,
+		// param1, document.write로 출력
+		people.saySomething = function(msg){
+			document.write('<h1>' + msg + '</h1>');
+		};
+		
+		// 3. people객체에 sayInfo() 함수 생성,
+		// <h1> kjh 님은 여자 입니다. </h1>
+		people.sayInfo = function(){
+			document.write('<h1>' + this.getName() + 
+				"님은 " + this.getGender() + '입니다.</h1>');
+		};
+		
+		people.getName = function(){
+			return this.name;
+		};
+		
+		people.getGender = function(){
+			return this.gender;
+		};
+		
+		people.sayName();
+		people.sayGender();
+		people.saySomething("hello world");
+		people.sayInfo();
+		
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

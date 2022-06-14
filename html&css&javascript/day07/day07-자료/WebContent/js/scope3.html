@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		var vscope = 'global';
+		
+		function fscope(){
+			// 지역변수와, 전역변수를 동시에 정의되어 있다면
+			// 지역변수가 우선한다는 것을 알 수 있다.
+			var vscope = 'local';
+			alert('함수안' + vscope);
+		}
+		
+		fscope();
+		alert(vscope);
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

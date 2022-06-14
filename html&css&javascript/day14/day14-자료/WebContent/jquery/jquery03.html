@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+	div{
+		border: 2px blue solid;
+		margin: 2px;
+		padding: 2px;
+	}
+	p{
+		background-color: tomato;
+		margin: 2px;
+		padding: 2px;
+	}
+	strong{
+		color: red;
+	}
+</style>
+</head>
+<body>
+	<!-- 
+		부모로 감싸기
+			unwrap(), wrap(), wrapAll(), wrapInner()
+	 -->
+	 
+	 <span>Span Text</span>
+	 <strong>Strong Text</strong>
+	 <span>Another Span Text</span>
+	 
+	 <script>
+	 	$("span").wrap("<div><div><p><em><b></b></em></p></div></div>");
+	 </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		/*
+			생성자를 통한 객체의 초기화
+		*/	
+		
+		function Person(name){
+			this.name = name;
+			this.introduce = function(){
+				return 'My name is ' + this.name;
+			};
+		}
+		
+		let p1 = new Person('abc');
+		document.write(p1.introduce() + "<br>");
+		
+		let p2 = new Person('def');
+		document.write(p2.introduce() + "<br>");
+	
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

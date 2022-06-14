@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<input type="button" id="target1" value="button1">
+	
+	<script>
+		let t1 = document.getElementById('target1');
+		
+		function btn_listener(event){
+			alert("button 클릭! : " + event.target.id);
+		}
+	
+		t1.addEventListener('click', btn_listener );
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

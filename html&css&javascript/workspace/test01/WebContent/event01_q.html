@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>event(2)</title>
+
+		<script type="text/javascript">
+			/** showResult() 함수 안에서 호출된다. */
+			// 두 수를 더한 값을 리턴하여 주는 함수
+			function sum(x, y) {
+				var z = x + y;
+				return z;
+			}
+			
+			/** 
+				문제(1). id가 question인 요소안에 10+50의 결과를 지정한다. 
+				(애플리케이션 테스트 수행 결과에서 발견된 결함을 식별하고 조치에 대한 우선순위를 결정하고 적용할 수 있다.(10))
+			*/
+			function showResult() {
+				let result = sum(10, 50);
+				let red_result = "<font color='red'>" + result + "</font>";
+				document.getElementById("question").innerHTML = red_result;
+			}
+			
+			/** 
+				문제(2). id가 question인 요소안에 "?"를 지정한다.
+				(결함이 발생한 소스를 분석하고 기존에 구현된 로직과의 연관성을 고려하여 부작용이 최소화되도록 결함을 제거할 수 있다.(5))
+			*/
+			function hideResult() {
+				document.getElementById("question").innerHTML = "?";
+			}
+		</script>
+	</head>
+
+	<body>
+		<!-- (3) <h1> 태그 위에 마우스를 올렸을 때, showResult() 호출 -->
+		<!-- (4) <h1> 태그 위에 마우스를 내렸을 때, hideResult() 호출 -->
+		<h1 onmouseover="showResult()" onmouseout="hideResult()">10 + 50 = <span id="question">?</span></h1>
+		<p>결과를 보시려면 수식 위에 마우스를 올리세요.</p>
+	</body>
+</html>

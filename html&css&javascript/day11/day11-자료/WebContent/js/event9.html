@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	 <p>
+	 	<!-- 
+	 		checked 	: true 	-> 체크가 되어 있는 상태 
+	 					: false -> 체크가 되어 있지 않은 상태
+	 	-->
+	 	<label>prevent event on</label>
+	 	<input type="checkbox" id="prevent">
+	 </p>
+	 <p>
+	 	<a href="http://www.naver.com" id="sel1">naver</a>
+	 </p>
+ 	<form action="http://www.naver.com" id="sel2">
+ 		<input type="submit">
+ 	</form>
+ 	
+ 	<script>
+ 		// addEventListener 방식
+ 		// click, submit
+ 		document.getElementById('sel1').addEventListener('click',function(event){
+ 			if( document.getElementById('prevent').checked ){
+ 				event.preventDefault();
+ 			}
+ 		});
+ 		
+ 		document.getElementById('sel2').addEventListener('submit',function(event){
+ 			if( document.getElementById('prevent').checked ){
+ 				event.preventDefault();
+ 			}
+ 		});
+ 		
+ 		
+ 	</script>
+</body>
+</html>
+
+
+
+

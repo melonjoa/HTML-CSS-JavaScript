@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<!-- 
+		.off() 메소드
+		 -> 더 이상 사용하지 않는 이벤트와의 바인딩을 제거
+	 -->
+	 
+	 <h1>off()</h1>
+	 <button id="btn">버튼 클릭 가능</button>
+	 <button id="btnBind">버튼 클릭을 가능하게 한다.</button>
+	 <button id="btnUnbind">버튼 클릭을 불가능하게 한다.</button>
+	 <div></div>
+	 
+	 <script>
+	 	function action(){
+	 		$('div').append("버튼 이벤트 발생!!<br>");
+	 	}
+	 	
+	 	$("#btn").on("click",function(){
+	 		action();
+	 	});
+	 	
+	 	$("#btnUnbind").on("click", function(){
+// 	 		$("#btn").off("click");
+// 	 		$("#btn").text("버튼 클릭 불가능");
+
+			//chain기법
+			$("#btn").off("click").text("버튼 클릭 불가능");
+	 	});
+	 	
+	 	$('#btnBind').on("click", function(){
+	 		$("#btn").on("click",function(){
+		 		action();
+		 	}).text("버튼 클릭 가능");
+	 	});
+	 
+	 </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<!-- onload : 페이지 최초 로딩시, authNo() 함수를 호출 -->
+<body onload="authNo()">
+	<!-- 
+		문제, 0~9사이의 랜덤 5자리 인증번호를 id값이 "auth"인 요소에서 출력
+		 - 11111
+		 - 09566
+		 - 09943
+		
+		document.getElementById("auth").innerHTML = 랜덤숫자;
+	 -->
+	<p>
+		고객님의 인증번호는 <strong id="auth">00000</strong> 입니다.
+	</p>
+	
+	<input type="button" value="인증번호 새로 받기" 
+		onclick="refresh();">
+		
+	<script>
+		function refresh(){
+			// location 객체안에 포함된 reload()함수는
+			// 현재 페이지를 새로고침한다.
+			location.reload();			
+		}
+		
+		// 두 수 사이의 랜덤값을 리턴하는 함수
+		function random(n1, n2){
+			return parseInt( Math.random() * (n2 - n1 + 1)) + n1;
+		}
+		
+		// 5자리 인증번호 return 함수
+		function authNo(){
+			let value = "";
+			for( let i = 0; i<5; i++ ){
+				value += random(0, 9);
+			}
+			
+			document.getElementById("auth").innerHTML = value;
+		}
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

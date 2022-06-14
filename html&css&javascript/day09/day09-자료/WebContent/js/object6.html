@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>	
+		/*
+			this키워드를 사용해서 for문 사용해서, grades.show() 호출시
+			a:10
+			b:20
+			c:30
+			을 출력하도록 하라
+		*/
+		// 45분
+		let grades = {
+			'list' : {'a':10, 'b':20, 'c':30},
+			'show' : function(){
+				for( let name in this.list ){
+					document.write(name + " : " 
+						+ this.list[name] + "<br>");
+				}
+			}
+		};
+			
+		grades.show();
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

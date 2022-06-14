@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\0900_GB_SYD\html&amp;css&amp;javascript\workspace\cozastore-master"/>
+		<item value="D:\0900_GB_SYD\html&amp;css&amp;javascript\workspace\day05"/>
+	</list>
 	<section name="NewWizardAction">
 	</section>
 </section>

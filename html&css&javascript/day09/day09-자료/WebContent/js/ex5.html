@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 실행시 에러 발생 이유는 id태그가 로드되기 전에 호출되기 때문 -->
+<!-- 	<script src="script.js"></script> -->
+	<script>
+		let hw = document.getElementById('hw');
+		hw.addEventListener('click',function(){
+			alert("Hello world");
+		});
+	</script>
+	
+	<input type="button" id="hw" value="Hello">
+</body>
+</html>

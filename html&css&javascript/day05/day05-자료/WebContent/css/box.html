@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	/*
+		auto 	: width, height, margin에 대하여 적용할 수 있는 
+				특수한 값이다.
+	*/
+	.parent{
+		background-color: tomato;
+		border: 10px dotted red;
+		width: 90%;
+		height: auto;
+/* 		width: 500px; */
+/* 		height: 300px; */
+	}
+	
+	.child{
+		background-color: powderblue;
+		/*
+			부모의 width에서 자신의 padding과 border값을 제외한
+			나머지를 자동으로 계산한다.
+		*/
+		width: auto;
+/* 		width: 450px; */
+/* 		height: 270px; */
+		/*부모의 크기에 여백과 테두리의 크기를 더하므로, 부모보다 커진다.*/
+		padding: 10px 20px;
+		border: 5px solid purple;
+	}
+</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="child">
+			HTML &amp; CSS<br>
+			HTML &amp; CSS<br>
+			HTML &amp; CSS<br>
+		</div>
+	
+	</div>
+</body>
+</html>

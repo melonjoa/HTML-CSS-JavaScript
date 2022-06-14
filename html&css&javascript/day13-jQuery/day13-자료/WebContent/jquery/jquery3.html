@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+	.selected{
+		background-color: tomato;
+		border: 2px solid red;
+	}
+</style>
+</head>
+<body>
+	<!-- 
+		- jQuery의 모든 기능은 $라는 객체의 하위로 포함되어 있다.
+		- "$"는 jQuery의 모든 기능을 담고 있는 객체이자 함수이다.
+		- jQuery -> $
+		
+		1. HTML 요소를 획득하기
+		 - js : let h1 = document.getElementById("id값");
+		 	-> jQuery : let h1 = $("#id값"); 
+		 	
+		2. innerHTML의 간결화
+		 - js : h1.innerHTML = "Hello Javascript";
+		 	-> jQuery : h1.html("Hello jQuery");
+		
+		3. 
+		 - js 
+		window.onload = function(){
+			
+		};
+		 
+		 - jQuery
+		 $(document).ready(function(){
+		 	
+		 });
+		 
+		 - 한번  더 축약
+		 $(function(){
+		 
+		 });
+		 
+		 4. 클래스로 선택
+		 $('.클래스 이름');
+		 
+		 5. 태그
+		 $('태그')
+	 -->
+	 
+	<ul>
+		<li id="htmlID">HTML</li>
+		<li class="selectClass">css</li>
+		<li>javascript</li>
+		<li>PHP</li>
+		<li id="mysqlID">MySql</li>
+	</ul>
+	<script>
+		//id
+		//$('#htmlID').addClass('selected');
+		
+		// class
+		//$('.selectClass').addClass('selected');
+		
+		// tag
+		//$('li').addClass('selected');
+		
+		// 여러개
+		$('#htmlID, .selectClass').addClass('selected');
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<h1>마우스 이벤트</h1>
+	<p>이 문장 위로 마우스를 움직여 보세요</p>
+	<div></div>
+	
+	<script>
+		$("p").on("mouseenter mouseleave",function(){
+			$("div").append("마우스 커서가 문장위로 들어오거나 빠져나갔습니다.<br>");
+		});
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

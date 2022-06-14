@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<!-- 
+		one()	: 핸들러가 한번만 실행되고, 더는 실행되지 않는다.
+	 -->
+	 
+	 <h1>one()</h1>
+	 <p>아래 버튼 한번만 실행된다</p>
+	 <button>버튼을 클릭해 주세요</button>
+	 <div></div>
+	 
+	 <script>
+	 	$("button").one("click", function(){
+	 		$("div").append("이제 클릭이 되지 않습니다.<br>");
+	 	});
+	 </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

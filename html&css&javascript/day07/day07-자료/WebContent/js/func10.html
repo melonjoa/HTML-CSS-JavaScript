@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		function confirmFunc() {
+			if( confirm('확인(예) 또는 취소(아니오)를 선택해주세요') ){
+				alert('확인(예)를 누르셨습니다.');
+			} else {
+				alert('취소(아니오)를 누르셨습니다.');
+			}
+		}
+		
+		// confirmFunc();
+		
+		
+		function ask( question, yes, no ){
+			if( confirm(question) ){
+				yes();
+			} else {
+				no();
+			}
+		}
+		
+		// 화살표 function
+		ask( "동의하십니까?", 
+			 () => alert("동의하셨습니다."),
+			 () => alert("취소 버튼을 누르셨습니다.")
+		);
+		
+		
+		// 일반 function
+		/*
+		ask( "동의하십니까?",
+			function() { alert("동의하셨습니다.") },
+			function() { alert("취소 버튼을 누르셨습니다.") });
+		*/
+		
+		
+		
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

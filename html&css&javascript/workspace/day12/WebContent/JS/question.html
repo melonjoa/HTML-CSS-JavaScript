@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!--질문2.-->
+ 	<p>
+	<input type="button" id="target1" value="target1">
+	<input type="button" id="target2" value="target2">
+	<input type="button" id="target3" value="target3">
+	<input type="button" id="target4" value="target4">
+	<input type="button" id="target5" value="target5">
+	</p>
+	
+	
+	<script>
+	
+//질문2.	
+		/* 유사배열에서 for...in 반복문은 어떻게 사용해야 적절한가?
+		경우에 따라 오류가 나거나 나지 않으며, 유사배열을 반복하는 횟수도 달라진다.
+		*/
+		function button_listener(e){
+			alert(e.target.id + " 클릭됨!");
+ 		} 
+		
+		let list = document.getElementsByTagName("input");
+		
+		// of
+// 		for (let t of list) {				
+//  			document.write("<br>");
+//  			t.addEventListener('click', button_listener);
+//  		}
+ 		
+		// in
+ 		for (let t in list) {				
+ 			document.write("<br>");
+ 			t.addEventListener('click', button_listener);
+ 		}
+ 		
+	</script>
+</body>
+</html>
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		let grades = { 
+			"abc" : 10, "def" : 6, "ghr" : 8 
+		};
+		
+		document.write("<h1>" + grades.abc + "</h1>");
+		document.write("<h1>" + grades.def + "</h1>");
+		document.write("<h1>" + grades.ghr + "</h1>");
+		
+		document.write("--------------------------");
+		
+		document.write("<h1>" + grades["abc"] + "</h1>");
+		document.write("<h1>" + grades["def"] + "</h1>");
+		document.write("<h1>" + grades["ghr"] + "</h1>");
+		
+		document.write("--------------------------<br>");
+		
+		//let grades2 = {};
+		let grades2 = new Object();
+		
+		grades2['abc'] = 10;
+		grades2['def'] = 6;
+		grades2['ghr'] = 20;
+		
+		for( key in grades2 ){
+			document.write("key : " + key + 
+				", value : " + grades2[key] + "<br/>")
+		}
+		
+// 		document.write("<h1>" + grades2["abc"] + "</h1>");
+// 		document.write("<h1>" + grades2["def"] + "</h1>");
+// 		document.write("<h1>" + grades2["ghr"] + "</h1>");
+		
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

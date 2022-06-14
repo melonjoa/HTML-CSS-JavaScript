@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		/*
+			- javascript의 변수는 선언시에 데이터형이 결정되지 않기	때문에 
+			함수를 대입하는것도 가능하다.
+			- 이렇게 생성된 변수는 함수와 동일한 사용 방법을 갖는다.
+		*/
+		
+		// 일반적인 함수의 선언
+		function myFunction(){
+			document.write("<h1>Hello, javascript</h1>");
+		}
+		
+		// javascript는 함수와 변수가 동급
+		// 따라서 함수의 이름을 변수에 대입할 수 있다.
+		let value = myFunction;
+		
+		// 함수가 대입된 변수는 그 자신이 함수처럼 동작한다.
+		value();
+		
+		
+		// 함수를 변수에 대입할 수 있기 때문에,
+		// 처음부터 변수에 함수의 내용을 대입하는 것이 가능하다.
+		let value2 = function(){
+			document.write("<h1>Hello~ Javascript!</h1>")
+		};
+
+		let test = 3;
+		
+		
+		value2();
+		
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

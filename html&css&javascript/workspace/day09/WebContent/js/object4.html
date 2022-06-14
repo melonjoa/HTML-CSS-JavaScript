@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		let grades = {
+			'list' : { 'aaa': 10, 'bbb': 6, 'ccc': 80},
+			'show' : function() {
+				document.write('Hello World');
+			}
+		};
+		
+		document.write(grades);
+		document.write('<br>');
+		document.write(grades['list']);
+		document.write('<br>');
+		document.write(grades['list']['aaa']);
+		document.write('<br>');
+		document.write('<br>');
+		
+		document.write(grades.list);
+		document.write('<br>');
+		document.write(grades.list.aaa);
+		document.write('<br>');
+		document.write('<br>');
+		
+		document.write(grades['show']);
+		document.write('<br>');
+		grades['show']();
+//		document.write(grades['show']());
+		document.write('<br>');
+		grades.show();
+//		document.write(grades.show());
+		document.write('<br>');
+		
+		// 참고
+		/*
+		document.write(grades['show']());
+		document.write(grades.show());
+		document.write( document.write('Hello World') );
+		*/
+	</script>
+</body>
+</html>

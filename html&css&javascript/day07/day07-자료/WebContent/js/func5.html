@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		function f(x, y){
+			let z = x + y;
+			
+			// 값이 10보다 작을 경우, 실행 중단
+			if( z < 10 ){
+				return;
+			}
+			
+			return z;
+		}
+	
+		//함수 호출
+		let a = f(2,1);
+		let b = f(5,7);
+		let c = f(10,5);
+		
+		document.writeln("<h1>" + a + "</h1>");
+		document.writeln("<h1>" + b + "</h1>");
+		document.writeln("<h1>" + c + "</h1>");
+	
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="form1">
+		<input type="radio" name="gender" value="M"> 남자
+		<input type="radio" name="gender" value="F"> 여자	
+	</form>
+	
+	<script>
+		// radio 버튼은 name 속성이 값을 동일하게 지정하기 때문에
+		// name속성을 통하여 접근 할 경우 유사 배열로 처리된다
+		let gender = document.form1.gender[0];
+		
+		// 값
+		let genderVal = document.form1.gender[0].value; 
+		
+		// 체크여부 확인
+		// checked 되어있으면 true, 안되어 있으면 false return
+		document.form1.gender[0].checked;
+		
+		// 항목을 강제로 체크하는 경우
+		//document.form1.gender[0].checked = true;
+		
+		//////////////////////////////////////////////////
+		// 라디오 버튼 값 체크
+		let is_check = false;
+		
+		// 라디오버튼의 길이만큼 체크 여부 확인
+		for( let i = 0; i<document.form1.gender.length; i++ ){
+			// i 번째 항목이 체크되어 있다면?
+			if( document.form1.gender[i].checked ){
+				is_check = true;
+				// 반복문 중단
+				break;
+			}
+		}
+		
+		if( !is_check ){
+			alert("성별을 선택해 주세요");
+		}
+		//////////////////////////////////////////////////
+		
+	
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

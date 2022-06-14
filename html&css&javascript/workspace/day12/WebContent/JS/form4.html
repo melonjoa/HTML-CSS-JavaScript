@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 
+		focus 지정
+		 - 입력 항목에 커서가 지정된 상태
+		 - focus() 함수를 호출하면 강제로 포커스를 지정
+		 
+		 document.form1.foo.focus();
+	 -->
+	 
+	 <form name="form1">
+	 	<input type="text" name="foo" id="foo">
+	 </form>
+	 
+	 <script>
+	 	document.form1.foo.focus();
+	 </script>
+	 
+	 <!-- 
+	 	작성된 내용 리셋하기
+	 	 - form 객체는 작성된 내용을 리셋하기 위한 reset()함수를 갖는다.
+	 	 - <input type="reset" /> 버튼을 클릭한 것과 동일한 효과를 얻을 수 있다.
+	 	 
+	 	 document.form1.reset();
+	  -->
+</body>
+</html>

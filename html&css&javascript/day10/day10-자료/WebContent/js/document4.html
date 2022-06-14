@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<!-- 
+	document.getElementById
+	 - id값을 기준으로 객체를 조회한다. 성능면 에서 가장 우수
+ -->
+<body>
+	<ul>
+		<li>HTML</li>
+		<li id="active">CSS</li>
+		<li>JavaScript</li>
+	</ul>
+	
+	<script>
+		let li = document.getElementById('active');
+		li.style.color = 'tomato';
+	</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<ul>
+		<li>HTML</li>
+		<li id="active">CSS</li>
+		<li>JavaScript</li>
+	</ul>
+	
+	<input type="button" value="javascript" onclick="funcJs();">
+	<input type="button" value="jQuery" onclick="funcJQuery();">
+	
+	<script>
+		// 버튼 클릭시 CSS 문자의 색 변경, underline
+		// 순수 js사용
+		function funcJs(){
+			let li = document.getElementById('active');
+			li.style.color = 'tomato';
+			li.style.textDecoration = "underline";
+		}
+		// jQuery 사용
+		function funcJQuery(){
+			$('#active').css('color', 'blue')
+				.css('textDecoration', 'underline');
+		}
+	</script>
+</body>
+</html>

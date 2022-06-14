@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<!-- 
+		keypress(), keydown()
+		 : shift, esc, delete와 같이 화면에 출력 되지 않는 ㄴ키들은
+		 "keydown" 이벤트는 발생시키지만, 
+		 "keypress" 이벤트는 발생시키지 않는다.
+	 -->
+	 
+	 <input type="text"> 입력란에 키보드로 내용을 입력하세요.
+	 <h1>jQuery .keypress()</h1>
+	 <p id="text"></p>
+	 
+	 <h1>jQuery .keydown()</h1>
+	 <p id="text2"></p>
+	 
+	 <script>
+		let i = 0;
+		$("input").keypress(function() {
+			$("#text").text( (++i) + "번 키보드가 눌렸습니다." );
+		});
+		
+		let j = 0;
+		$("input").keydown(function() {
+			$("#text2").text( (++j) + "번 키보드가 눌렸습니다." );
+		});
+		
+		
+		
+	 </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

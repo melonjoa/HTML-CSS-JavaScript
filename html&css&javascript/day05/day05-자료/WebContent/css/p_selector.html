@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+/* 	li{ color: red; } */
+/* 	h1{ color: red; } */
+	/*
+		상속	: 부모 엘리먼트의 속성을 자식 엘리먼트가 물려받는 것을 의미한다.
+			  css에서 생산성을 높이기 위한 중요한 기능
+	*/
+	html{ color: red; }
+	#select{ color: black; }
+	/*
+		모든 속성이 상속을 지원하는 것은 아니다. 상속을 하면 오히려 비효율적인
+		속성들이 있기때문이다.
+		https://www.w3.org/TR/CSS21/propidx.html
+	*/
+	body { border: 1px solid blue; }
+</style>
+</head>
+<body>
+	<div id="container">
+		<h1>수업준비</h1>
+		<ul>
+			<li id="select">java</li>
+			<li>css</li>
+			<li>js</li>
+		</ul>
+		
+		<h1>수업참가자</h1>
+		<ul>
+			<li>홍길동</li>
+			<li>한이람</li>
+			<li>한이은</li>
+		</ul>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

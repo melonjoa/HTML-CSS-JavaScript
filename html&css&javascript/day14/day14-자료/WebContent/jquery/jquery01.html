@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+	p{
+		background-color: tomato;
+	}
+</style>
+</head>
+<body>
+	<!-- 
+		자식으로 삽입
+			append(). appendTo(), html(), prepend(),
+			prependTo(), text()
+	 -->
+	 
+	 <p id="user_p">
+	 	jQuery는 : 
+	 </p>
+	 <script>
+		// 순수 js
+		/*
+		document.getElementById("user_p").innerHTML
+			= document.getElementById("user_p").textContent
+				+ "<strong>재미있다.</strong>"
+		*/
+		
+		// jQuery
+		$("p").append("<strong>재미있다!</strong>");
+	 </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

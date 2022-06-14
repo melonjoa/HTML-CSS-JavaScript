@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<!-- 
+		each()
+		 - each() 메소드는 객체나 배열에서 모두 사용할 수 있는 범용적인 반복함수이다.
+	 -->
+	 
+	 <script>
+	 	/*
+	 		$.each(object, function(index, item){});
+	 			- object : 대상을 전달
+	 			- function(index, item){}
+	 				: index -> 인덱스 값을 의미
+	 				: item -> 해당 인덱스가 가진 값을 의미
+	 	*/
+	 	let arr = ['다음', '네이버', '구글'];
+	 	
+	 	$.each( arr, function(index, item){
+	 		let result = '';
+	 		result = index + " : " + item;
+	 		document.write(result + "<br>");
+	 	});
+	 </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

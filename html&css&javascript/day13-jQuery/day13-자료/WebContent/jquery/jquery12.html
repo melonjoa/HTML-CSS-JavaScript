@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<!-- 
+		effect 효과
+		 - show() : 선택한 요소를 나타나게 한다
+		 - hide() : 선택한 요소를 사라지게 한다.
+	 -->
+
+	<h1>hide(), show() 메소드</h1>
+	<p>
+		<button id="btnHide">문장 숨기기</button>
+		<button id="btnShow">문장 표시하기</button>
+	</p>
+	<div>안녕하세요, jquery 입니다.</div>
+	
+	<script>
+		$("#btnHide").on("click",function(){
+			$("div").hide(1000);
+		});
+		
+		$("#btnShow").on("click",function(){
+			$("div").show("fast");
+		});
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

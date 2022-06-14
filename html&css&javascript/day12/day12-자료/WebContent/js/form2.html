@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="form1">
+		<select name="foo">
+			<option>---선택해주세요---</option>
+			<option value="item1">항목1</option>
+			<option value="item2">항목2</option>
+		</select>
+	</form>
+	
+	<script>
+		let myform = document.form1;
+		
+		// select 박스 안의 요소들을 하나의 유사 배열로 본다.
+		// 가장 첫 번째 <option>태그가 0이다. 
+		// 항목1 선택
+		let option1 = myform.foo[1];
+		
+		// <select> 태그 객체의 selectedIndex 속성에 임의의 숫자값을
+		// 대입하면 대입한 위치에 해당하는 <option> 태그가 강제로 선택
+		//myform.foo.selectedIndex = 1;
+		
+		// 사용자가 선택한 값
+		myform.foo[myform.foo.selectedIndex].value;
+		
+		// 선택 여부 검사하기
+		if( myform.foo.selectedIndex < 1 ){
+			alert("select box 선택은 필수값입니다.");
+		}
+		
+		
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
